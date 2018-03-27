@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace WebApplicationCore.Models
 {
@@ -17,17 +18,22 @@ namespace WebApplicationCore.Models
 
         private void InitializePies()
         {
-            throw new NotImplementedException();
+            _pies = new List<Pie>()
+            {
+                new Pie {Id = 1, Name = "Torta de Limão", Price = 12.50M },
+                new Pie {Id = 1, Name = "Torta de Morango", Price = 10.50M},
+                new Pie {Id = 1, Name = "Torta de maracujá", Price = 15.50M},
+            };
         }
 
         public IEnumerable<Pie> GetAllPies()
         {
-            throw new NotImplementedException();
+            return _pies;
         }
 
         public Pie GetPieById(int id)
         {
-            throw new NotImplementedException();
+            return _pies.FirstOrDefault(x => x.Id == id);
         }
     }
 }

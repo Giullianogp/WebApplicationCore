@@ -1,0 +1,12 @@
+﻿@model WebApplicationCore.ViewModels.HomeViewModel
+
+<h2>@Model.Title</h2>
+
+@foreach (var item in Model.Pies)
+{
+    <di>
+        <h2>@item.Name</h2>
+        <h3>@item.Price.ToString("c")</h3>
+    </di>
+}
+
