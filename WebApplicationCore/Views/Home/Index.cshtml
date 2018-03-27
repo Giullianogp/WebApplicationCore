@@ -1,12 +1,14 @@
 ﻿@model WebApplicationCore.ViewModels.HomeViewModel
 
-<h2>@Model.Title</h2>
-
 @foreach (var item in Model.Pies)
-{
-    <di>
-        <h2>@item.Name</h2>
-        <h3>@item.Price.ToString("c")</h3>
-    </di>
+{<div class="container-fluid">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="@item.ImageThumbnailUrl" alt="@item.Name" />
+            <div class="card-body">
+                <h3 class="card-title">@item.Name @item.Price.ToString("c")</h3>
+                <p class="card-text">@item.ShortDescription</p>
+            </div>
+        </div>
+    </div>
 }
 

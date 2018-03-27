@@ -20,9 +20,9 @@ namespace WebApplicationCore.Models
         {
             _pies = new List<Pie>()
             {
-                new Pie {Id = 1, Name = "Torta de Limão", Price = 12.50M },
-                new Pie {Id = 1, Name = "Torta de Morango", Price = 10.50M},
-                new Pie {Id = 1, Name = "Torta de maracujá", Price = 15.50M},
+                new Pie {Id = 1, Name = "Torta de Limão", Price = 12.50M, ShortDescription = "Bolo muito macio, mas pouco saboroso", ImageThumbnailUrl = "https://www.vovopalmirinha.com.br/wp-content/uploads/2017/02/bolo-prestigio.jpg" },
+                new Pie {Id = 1, Name = "Torta de Morango", Price = 10.50M, ShortDescription = "Bolo um tanto estranho porém irresistivel", ImageThumbnailUrl = "https://guiadacozinha.com.br/wp-content/uploads/2016/11/Bolo-leite-condensado-molhadinho.jpg"},
+                new Pie {Id = 1, Name = "Torta de maracujá", Price = 15.50M, ShortDescription = "Bolo de doce de leite com cobertura desconhecida", ImageThumbnailUrl = "https://www.lactosenao.com/wp-content/uploads/2017/07/bolo-festa-sem-gluten-e-lactose.png"},
             };
         }
 
